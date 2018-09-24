@@ -2,11 +2,11 @@
 
     <mat-card-header>
         <div mat-card-avatar class="thumbnail" [ngStyle]="{'background-image': 'url(//render-eu.worldofwarcraft.com/character/' + char.thumbnail + ')'}"></div>
-        <mat-card-title [ngStyle]="{'color': char.faction ? '#8C1616' : '#144587'}">
+        <mat-card-title [ngStyle]="{'color': char.faction ? '#e02929' : '#69f'}">
             {{char.name}}
         </mat-card-title>
         <mat-card-subtitle>
-            <span [ngStyle]="{'color': char.faction ? '#8C1616' : '#144587'}">
+            <span [ngStyle]="{'color': char.faction ? '#e02929' : '#69f'}">
                 {{char.gender ? 'Female': 'Male'}} {{char.race | characterRace | async}}
             </span>
             <span charClass [charId]="char.class">

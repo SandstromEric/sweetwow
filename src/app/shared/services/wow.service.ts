@@ -15,6 +15,10 @@ export class WowService {
         return this.http.get(`https://${region}.api.battle.net/wow/character/${realm}/${charname}?fields=talents&locale=en_GB&apikey=${this.apiKey}`);
     }
 
+    getGuildProfile(region: string, realm: string, guildname: string) : Observable<any> {
+        return this.http.get(`https://${region}.api.battle.net/wow/guild/${realm}/${guildname}?fields=members&locale=en_GB&apikey=${this.apiKey}`);
+    }
+
     /* getCharTalents(region: string, realm: string, charname: string): Observable<any> {
         return this.http.get(`https://${region}.api.battle.net/wow/character/${realm}/${charname}??fields=talents&locale=en_GB&apikey=${this.apiKey}`);
     } */

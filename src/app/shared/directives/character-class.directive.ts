@@ -1,5 +1,4 @@
 import { Directive, Input, Renderer2, OnInit, ElementRef } from '@angular/core';
-import { ExecFileOptionsWithStringEncoding } from 'child_process';
 
 export interface Class {
     id: number;

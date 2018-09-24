@@ -1,0 +1,28 @@
+.mat-card {
+	background: #222;
+	color: #fff;
+	padding: 0;
+}
+
+.mat-card-title {
+	text-transform: capitalize;
+}
+
+.mat-card-header {
+	position: relative;
+	padding: 24px 24px 0 24px;
+	.refresh {
+		position: absolute;
+		right: 24px;
+	}
+}
+
+.mat-card-footer {
+	padding: 0 48px 12px 48px;
+	text-align: right;
+}
+
+.thumbnail {
+	background-position: center 30%;
+}
+
